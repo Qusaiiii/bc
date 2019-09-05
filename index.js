@@ -6,6 +6,8 @@ const prefix = '!';
 if(message.author.bot) return;
 if(message.channel.type === 'dm') return;
     if(message.content.startsWith(prefix + 'bc')) {
+             if (!message.member.hasPermission("ADMINISTRATOR"))  return;
+
      let filter = m => m.author.id === message.author.id;
  
  let recembed = new Discord.RichEmbed()
