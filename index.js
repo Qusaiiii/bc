@@ -1,9 +1,9 @@
 const Discord = require('discord.js')
 const client = new Discord.Client();
-const prefix = '$';
+const prefix = '!';
  
 client.on("message", message => {
-    if (message.content.startsWith("$obc")) {
+    if (message.content.startsWith("!obc")) {
                  if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' ');
