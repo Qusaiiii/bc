@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const prefix = '!';
  
 client.on("message", message => {
-    if (message.content.startsWith("!obc")) {
+    if (message.content.startsWith("!obccc")) {
                  if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' ');
@@ -23,7 +23,7 @@ client.on("message", message => {
 
   client.on("message", message => {
   
-              if (message.content.startsWith(prefix + "bc")) {
+              if (message.content.startsWith(prefix + "bbbc")) {
                            if (!message.member.hasPermission("ADMINISTRATOR"))  return;
     let args = message.content.split(" ").slice(1);
     var argresult = args.join(' '); 
@@ -41,7 +41,7 @@ client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id !== '603458148640096277') return;
+  if (message.author.id !== '623866539925307406') return;
 
   
   if (message.content.startsWith(prefix + 'setwatch')) {
